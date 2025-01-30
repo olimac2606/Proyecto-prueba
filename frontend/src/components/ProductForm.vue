@@ -27,7 +27,7 @@
   
   //Reglas
   const requiredRule = (value) => !!value || "Este campo es obligatorio"
-  const greaterThanZero = (value) => !!value < 0 || "El precio tiene que ser mayor a 0"
+  const greaterThanZero = (value) => value > 0 || "El precio tiene que ser mayor a 0"
 
   // Referencia al formulario usando ref()
   const formRef = ref(null);
